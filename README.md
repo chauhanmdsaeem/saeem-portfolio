@@ -66,7 +66,7 @@ Open http://localhost:5173 in your browser.
 📄 Customization
 To update your portfolio content, open src/data/profile.js and update your personal details, bio, tech stack, projects, and social media links.
 
-👤 Connect with Me
-GitHub: chauhanmdsaeem
+## 👤 Connect with Me
 
-LinkedIn: Your LinkedIn Profile
+- **GitHub:** [chauhanmdsaeem](https://github.com/chauhanmdsaeem)
+- **LinkedIn:** [Your Name](https://linkedin.com/in/your-username)
