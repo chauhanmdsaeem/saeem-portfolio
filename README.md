@@ -1,69 +1,43 @@
-# Saeem Chauhan — Portfolio
+# 🚀 Saeem Chauhan — Developer Portfolio
 
-A dark-themed developer portfolio built with React, Tailwind CSS v4, and Framer Motion.
+A modern, responsive, and dark-themed developer portfolio built to showcase my projects, skills, and professional experience. 
 
-## Before you deploy — edit your content
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://saeem-portfolio-two.vercel.app)
+[![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-Everything on the site (name, bio, skills, projects, experience, links) lives in **one file**:
+---
 
-```
-src/data/profile.js
-```
+## ✨ Features
 
-Open it and fill in the two `TODO`-marked fields:
+- **Sleek Dark Theme:** Designed with a modern, developer-focused aesthetic.
+- **Smooth Animations:** Powered by Framer Motion for fluid page transitions and interactive elements.
+- **Fully Responsive:** Optimized for seamless viewing across mobile, tablet, and desktop screens.
+- **Centralized Data Management:** Portfolio content (bio, skills, projects, experience) is cleanly managed via a single configuration file (`src/data/profile.js`).
+- **Interactive UI:** Includes direct links to live projects, source code repositories, and an downloadable resume.
 
-```js
-socials: {
-  github: "https://github.com/YOUR_USERNAME",
-  linkedin: "https://linkedin.com/in/YOUR_PROFILE",
-},
-```
+---
 
-Also update each project's `github` and `demo` links (currently `"#"` placeholders).
+## 🛠️ Tech Stack
 
-If you have a resume PDF, replace `public/resume.pdf` with your own file (same filename), or update `resumeFile` in `profile.js` if you rename it.
+- **Frontend:** React 19, Vite
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Icons:** `lucide-react`
+- **Deployment:** Vercel
 
-## Run it locally
+---
 
-```bash
-npm install
-npm run dev
-```
+## 📂 Project Structure
 
-Visit the URL it prints (usually `http://localhost:5173`).
-
-## Deploy: GitHub + Vercel (free, public link, no login required to view)
-
-### 1. Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial portfolio"
-gh repo create your-portfolio --public --source=. --push
-```
-
-(No `gh` CLI? Create a new repo on github.com, then:)
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/your-portfolio.git
-git branch -M main
-git push -u origin main
-```
-
-### 2. Deploy on Vercel
-
-1. Go to [vercel.com](https://vercel.com) and sign in with GitHub.
-2. Click **Add New → Project**.
-3. Select your `your-portfolio` repo.
-4. Vercel auto-detects Vite — leave the defaults (Build Command: `npm run build`, Output Directory: `dist`).
-5. Click **Deploy**.
-
-You'll get a live URL like `your-portfolio.vercel.app` — public, no sign-in required, and it auto-redeploys every time you push to `main`.
-
-## Tech stack
-
-- React 19 + Vite
-- Tailwind CSS v4
-- Framer Motion (animations)
-- lucide-react (icons)
+```tree
+saeem-portfolio/
+├── public/              # Static assets (Resume PDF, images)
+├── src/
+│   ├── components/      # Reusable UI components (Navbar, Footer, ProjectCard, etc.)
+│   ├── data/            # Centralized portfolio data (profile.js)
+│   ├── App.jsx          # Main application layout
+│   └── main.jsx         # Entry point
+├── package.json
+└── README.md
