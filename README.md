@@ -41,3 +41,32 @@ saeem-portfolio/
 │   └── main.jsx         # Entry point
 ├── package.json
 └── README.md
+
+💻 Running Locally
+If you want to run or test this project on your local machine:
+
+Clone the repository:
+
+Bash
+git clone [https://github.com/chauhanmdsaeem/saeem-portfolio.git](https://github.com/chauhanmdsaeem/saeem-portfolio.git)
+Navigate to the project directory:
+
+Bash
+cd saeem-portfolio
+Install dependencies:
+
+Bash
+npm install
+Start the development server:
+
+Bash
+npm run dev
+Open http://localhost:5173 in your browser.
+
+📄 Customization
+To update your portfolio content, open src/data/profile.js and update your personal details, bio, tech stack, projects, and social media links.
+
+👤 Connect with Me
+GitHub: chauhanmdsaeem
+
+LinkedIn: Your LinkedIn Profile
