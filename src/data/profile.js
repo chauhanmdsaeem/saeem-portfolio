@@ -184,6 +184,9 @@ export const profile = {
   ],
 
   certifications: [
+    "AWS Solutions Architecture Job Simulation — Forage",
+    "Goldman Sachs Software Engineering Job Simulation — Forage",
+    "Tata Data Visualisation: Empowering Business with Effective Insights — Forage",
     "Python Essentials 1 & 2 — Cisco",
     "Java & Advanced Java with Spring Boot",
     "Presentation Skills — TCS iON",
