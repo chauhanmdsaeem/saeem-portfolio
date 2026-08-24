@@ -67,6 +67,46 @@ export const profile = {
 
   projects: [
     {
+      name: "Fieldnote: AI-Powered Job Portal",
+      year: "2026",
+      status: "Live",
+      description:
+        "A premium full-stack platform integrating Generative AI for smart job matching, AI-driven resume tailoring, and instant recruiter tooling.",
+      tech: ["Python", "Flask", "Supabase", "PostgreSQL", "Groq AI", "JavaScript"],
+      github: "https://github.com/chauhanmdsaeem/ai-job-portal",
+      demo: "https://fieldnote-ai.onrender.com/",
+    },
+    {
+      name: "Sales & Demand Forecasting System",
+      year: "2026",
+      status: "Live",
+      description:
+        "An interactive machine learning-powered sales forecasting dashboard that analyzes historical data and predicts future demand using a Random Forest Regressor.",
+      tech: ["Python", "Scikit-Learn", "Pandas", "Streamlit"],
+      github: "https://github.com/chauhanmdsaeem/FUTURE_ML_01",
+      demo: "https://futureml01-2nydokdagwixgggjk4chaa.streamlit.app/",
+    },
+    {
+      name: "Keystrike: Typing Test",
+      year: "2026",
+      status: "Live",
+      description:
+        "A fast, lightweight browser-based typing test featuring ghost racing, local stats tracking, and custom certificate exports.",
+      tech: ["HTML5", "CSS3", "JavaScript"],
+      github: "https://github.com/chauhanmdsaeem/keystrike",
+      demo: "https://keystrike-typing-test.vercel.app/",
+    },
+    {
+      name: "LeadDesk Mini",
+      year: "2026",
+      status: "Completed",
+      description:
+        "A lightweight lead-capture platform with a public form and an authenticated admin dashboard. Built with raw SQL, JWT auth, and no frontend framework.",
+      tech: ["FastAPI", "Python", "PostgreSQL", "JavaScript", "Tailwind"],
+      github: "https://github.com/chauhanmdsaeem/leaddesk-mini",
+      demo: "https://github.com/chauhanmdsaeem/leaddesk-mini",
+    },
+    {
       name: "Smart Factory Digital Twin",
       year: "2026",
       status: "Completed",
