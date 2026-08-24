@@ -144,7 +144,7 @@ export const profile = {
         "A real-time dashboard tracking CPU, memory and disk usage with automated PDF reporting, deployed live on Streamlit Cloud.",
       tech: ["Python", "Streamlit", "psutil", "Plotly"],
       github: "https://github.com/chauhanmdsaeem/system-health-monitor",
-      demo: "https://github.com/chauhanmdsaeem/system-health-monitor",
+      demo: "https://system-health-monitor-vpwwc4tohqsggrvtju3vl7.streamlit.app/",
     },
   ],
 
