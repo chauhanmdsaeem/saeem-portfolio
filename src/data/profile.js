@@ -98,7 +98,7 @@ export const profile = {
     {
       name: "LeadDesk Mini",
       year: "2026",
-      status: "Completed",
+      status: "Live",
       description:
         "A lightweight lead-capture platform with a public form and an authenticated admin dashboard. Built with raw SQL, JWT auth, and no frontend framework.",
       tech: ["FastAPI", "Python", "PostgreSQL", "JavaScript", "Tailwind"],
