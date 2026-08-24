@@ -93,7 +93,7 @@ export const profile = {
       description:
         "A fast, lightweight browser-based typing test featuring ghost racing, local stats tracking, and custom certificate exports.",
       tech: ["HTML5", "CSS3", "JavaScript"],
-      github: "https://github.com/chauhanmdsaeem/keystrike",
+      github: "https://github.com/chauhanmdsaeem/keystrike-typing-test",
       demo: "https://keystrike-typing-test.vercel.app/",
     },
     {
@@ -103,8 +103,8 @@ export const profile = {
       description:
         "A lightweight lead-capture platform with a public form and an authenticated admin dashboard. Built with raw SQL, JWT auth, and no frontend framework.",
       tech: ["FastAPI", "Python", "PostgreSQL", "JavaScript", "Tailwind"],
-      github: "https://github.com/chauhanmdsaeem/leaddesk-mini",
-      demo: "https://github.com/chauhanmdsaeem/leaddesk-mini",
+      github: "https://github.com/chauhanmdsaeem/leaddesk-fastapi",
+      demo: "https://leaddesk-fastapi.vercel.app/",
     },
     {
       name: "Smart Factory Digital Twin",
