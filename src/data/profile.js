@@ -16,11 +16,10 @@ export const profile = {
   heroSub:
     "Recent BCA graduate exploring full-stack development, NLP and applied ML. I like taking a problem apart, measuring it, and shipping something that works.",
   resumeFile: "/resume.pdf",
-
-  // TODO: replace with your real profile links
+  // Social profile links
   socials: {
-    github: "https://github.com/",
-    linkedin: "https://linkedin.com/in/",
+    github: "https://github.com/chauhanmdsaeem",
+    linkedin: "https://www.linkedin.com/in/chauhan-md-saeem-md-siddik-84a884373/",
   },
 
   about: {
