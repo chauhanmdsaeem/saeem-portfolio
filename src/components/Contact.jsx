@@ -16,15 +16,38 @@ const FIELDS = [
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [status, setStatus] = useState("idle");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const body = encodeURIComponent(
-      `${form.message}\n\n— ${form.name} (${form.email})`
-    );
-    window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent(
-      form.subject || "Portfolio inquiry"
-    )}&body=${body}`;
+    setStatus("sending");
+
+    const formData = new FormData();
+    formData.append("access_key", "50de475d-3c0d-4ec2-9262-5ab24ed0caff");
+    formData.append("name", form.name);
+    formData.append("email", form.email);
+    formData.append("subject", form.subject || "Portfolio inquiry");
+    formData.append("message", form.message);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("success");
+        setForm({ name: "", email: "", subject: "", message: "" });
+        setTimeout(() => setStatus("idle"), 3000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 3000);
+      }
+    } catch (error) {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+    }
   };
 
   return (
@@ -144,12 +167,14 @@ export default function Contact() {
 
             <motion.button
               type="submit"
+              disabled={status === "sending"}
               whileHover={hoverLift.whileHover}
               whileTap={hoverLift.whileTap}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="mono flex w-full items-center justify-center gap-2 rounded-full bg-[color:var(--color-mint)] py-3 text-sm font-semibold uppercase tracking-widest text-[#04120b]"
+              className="mono flex w-full items-center justify-center gap-2 rounded-full bg-[color:var(--color-mint)] py-3 text-sm font-semibold uppercase tracking-widest text-[#04120b] disabled:opacity-70 disabled:cursor-not-allowed"
             >
-              <Send size={15} /> Send Message
+              <Send size={15} /> 
+              {status === "sending" ? "Sending..." : status === "success" ? "Message Sent!" : status === "error" ? "Failed to Send" : "Send Message"}
             </motion.button>
           </motion.form>
         </div>
