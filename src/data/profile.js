@@ -40,27 +40,27 @@ export const profile = {
     {
       category: "Languages",
       icon: "Code2",
-      items: ["Python", "Java", "C", "JavaScript", "SQL"],
+      items: ["Python", "JavaScript", "SQL", "Java", "C"],
     },
     {
-      category: "ML & Data",
+      category: "ML & AI",
       icon: "BrainCircuit",
-      items: ["Pandas", "NumPy", "Scikit-Learn", "NLTK", "TF-IDF"],
+      items: ["Scikit-Learn", "Pandas", "Generative AI", "NLTK", "NumPy"],
     },
     {
-      category: "Web & Dashboards",
+      category: "Web & Frameworks",
       icon: "LayoutDashboard",
-      items: ["Streamlit", "FastAPI", "HTML/CSS", "Power BI", "Plotly"],
+      items: ["FastAPI", "Flask", "Tailwind CSS", "Streamlit", "HTML5/CSS3"],
     },
     {
       category: "Database & Tools",
       icon: "Database",
-      items: ["PostgreSQL", "Git", "Docker", "WebSockets"],
+      items: ["PostgreSQL", "Supabase", "Docker", "Git", "JWT Auth"],
     },
     {
       category: "Core CS",
       icon: "TerminalSquare",
-      items: ["Data Structures & Algorithms", "OOP", "DBMS"],
+      items: ["Data Structures & Algorithms", "OOP", "DBMS", "REST APIs"],
     },
   ],
 
