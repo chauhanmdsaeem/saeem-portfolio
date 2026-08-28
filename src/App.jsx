@@ -15,7 +15,7 @@ function App() {
   const [booted, setBooted] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[color:var(--color-bg)]">
+    <div className="relative min-h-screen bg-[color:var(--color-bg)] overflow-x-hidden">
       {!booted && <BootLoader onDone={() => setBooted(true)} />}
       <Navbar />
       <main>
