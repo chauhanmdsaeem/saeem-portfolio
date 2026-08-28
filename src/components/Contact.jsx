@@ -9,8 +9,8 @@ import { fadeLeft, fadeRight, viewportSettings, hoverLift } from "../lib/motion"
 const FIELDS = [
   { icon: Mail, label: "Email Address", value: profile.email, href: null },
   { icon: Phone, label: "Phone Contact", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
-  { icon: LinkedinIcon, label: "LinkedIn Profile", value: profile.socials.linkedin.replace("https://", ""), href: profile.socials.linkedin },
-  { icon: GithubIcon, label: "GitHub Codebase", value: profile.socials.github.replace("https://", ""), href: profile.socials.github },
+  { icon: LinkedinIcon, label: "LinkedIn Profile", value: "Connect on LinkedIn", href: profile.socials.linkedin },
+  { icon: GithubIcon, label: "GitHub Codebase", value: "@chauhanmdsaeem", href: profile.socials.github },
   { icon: MapPin, label: "Location", value: profile.location, href: null },
 ];
 
@@ -87,7 +87,7 @@ export default function Contact() {
                       <p className="mono text-[10px] uppercase tracking-widest text-[color:var(--color-muted)]">
                         {f.label}
                       </p>
-                      <p className="truncate text-sm text-[color:var(--color-ink)]">{f.value}</p>
+                      <p className="text-sm text-[color:var(--color-ink)] break-all sm:break-words">{f.value}</p>
                     </div>
                   </motion.div>
                 );
