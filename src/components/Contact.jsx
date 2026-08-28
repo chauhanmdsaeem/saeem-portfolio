@@ -7,7 +7,7 @@ import SectionHeading from "./SectionHeading";
 import { fadeLeft, fadeRight, viewportSettings, hoverLift } from "../lib/motion";
 
 const FIELDS = [
-  { icon: Mail, label: "Email Address", value: profile.email, href: `mailto:${profile.email}` },
+  { icon: Mail, label: "Email Address", value: profile.email, href: null },
   { icon: Phone, label: "Phone Contact", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
   { icon: LinkedinIcon, label: "LinkedIn Profile", value: profile.socials.linkedin.replace("https://", ""), href: profile.socials.linkedin },
   { icon: GithubIcon, label: "GitHub Codebase", value: profile.socials.github.replace("https://", ""), href: profile.socials.github },

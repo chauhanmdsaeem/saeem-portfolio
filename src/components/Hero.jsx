@@ -129,7 +129,7 @@ export default function Hero() {
             <LinkedinIcon size={16} />
           </motion.a>
           <motion.a
-            href={`mailto:${profile.email}`}
+            href="#contact"
             whileHover={hoverLiftSmall.whileHover}
             whileTap={hoverLiftSmall.whileTap}
             transition={{ duration: 0.2, ease: "easeOut" }}
